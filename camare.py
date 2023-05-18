@@ -52,7 +52,7 @@ def save_picture(frame, path, name):
 def main():
     cam, capture = cam_open()
     if cam == None:
-        print("open camare fail")
+        print("open camera fail")
         return False
 
     stream = iter(cam)
