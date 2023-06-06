@@ -18,6 +18,10 @@ class log():
     def write(self, data):
         self.fd.write(data)
 
+    def __del__(self):
+        self.fd.close()
+
+
 loger = log("log", "detect.log")
 
 def detect_human(picture):
